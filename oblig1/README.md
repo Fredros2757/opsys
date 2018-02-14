@@ -18,6 +18,6 @@ Alle 3 filene kjørt i gcc -Wall med 0 feilmeldinger.
 Clonet inn cppcheck til maskin og lastet ned gcc-cpp, kjørte filene gjennom cppcheck.
 Kommandolinje:
 sudo apt-get install gcc-cpp |
-git clone [legginnlenke]  |
+git clone https://github.com/danmar/cppcheck  |
 make |
 cppcheck --enable=all ./filnavn.c
