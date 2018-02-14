@@ -10,3 +10,7 @@ Gruppe:
 Fredrik Røstad
 Morten Bjerke
 
+
+
+Kompilert i Fedora OS.
+Alle 3 filene kjørt i gcc -Wall med 0 feilmeldinger.
