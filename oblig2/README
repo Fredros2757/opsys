@@ -1,2 +1,1 @@
-Før shellcheck. Tabbet meg ut og slettet endringene shellcheck ba om (straffen min for å prøve ut VIM over Nano uten å vite hva jeg driver med).
-Husker jeg rett var stort sett feilene jeg rettet på relatert til unødvendig bruk av cat (endre fra 'cat fil | grep frase' til 'grep frase fil')
+Alle scriptene skal fungere, og er kjørt gjennom shellcheck (og gjort endringer basert på shellcheck).
