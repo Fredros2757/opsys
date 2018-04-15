@@ -1,0 +1,25 @@
+Kodekvalitet oblig 3
+
+
+Kjørte PSScriptAnalyzer på alle scriptene
+	Lastet ned fra github og pakket ut
+	I powershell: Install-Module -name PSScriptAnalyzer
+	Invoke-PSScriptAnalyzer filnavn
+
+
+Resultater fra PSScriptAnalyzer:
+
+myprocinfo.ps1
+	Endret alle tilfeller av write-host til write-output (gammel utskriftsmetode)
+	Endret measure til Measure-Object (unødvendig aliasbruk)
+	Endret funksjon 2 fra å bruke Wmi-Object til å bruke Cmi-Instance
+
+	1 Advarsel gjenværende- PSUseBOMForUnicodeEncodedFile       Warning      myprocinfo.ps1       Missing BOM encoding for non-ASCII encoded file 'myprocinfo.ps1'
+	Denne er jeg ikke helt sikker på hvordan jeg fikser. Ser ut til å ha noe med UTF8 å gjøre
+
+procmi.ps1
+	1 Advarsel - PSUseBOMForUnicodeEncodedFile       Warning      procmi.ps1       Missing BOM encoding for non-ASCII encoded file 'procmi.ps1'
+	Samme som på myprocinfo.ps1
+
+chromethreads.ps1
+	Ingen advarsler
